@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>V:/Vedran/Documents/Visual Studio 2015/Projects/C#vj/PongGame/Content/music.mp3</SourceFile>
+  <SourceTime>2016-01-13T19:20:53.0032739+01:00</SourceTime>
+  <DestFile>V:/Vedran/Documents/Visual Studio 2015/Projects/C#vj/PongGame/Content/bin/Windows/music.xnb</DestFile>
+  <DestTime>2016-01-14T02:07:44.7388544+01:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2015-04-29T19:14:44+02:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2015-04-29T19:14:44+02:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>V:/Vedran/Documents/Visual Studio 2015/Projects/C#vj/PongGame/Content/bin/Windows/music.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

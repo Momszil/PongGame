@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using CsharpVjestina.Dz1.Zadatak2;
+using System.Threading;
 
 namespace PongGame
 {
@@ -92,8 +93,8 @@ namespace PongGame
             PaddleTop = new Paddle(paddleTexture);
 
             // Position both paddles with help screenBounds object 
-            PaddleBottom.Position = new Vector2(250, 900);
-            PaddleTop.Position = new Vector2(250, 0);
+            PaddleBottom.Position = new Vector2((GraphicsDevice.Viewport.Bounds.Width - PaddleBottom.Size.Width) / 2, GraphicsDevice.Viewport.Bounds.Height - PaddleBottom.Size.Height);
+            PaddleTop.Position = new Vector2((GraphicsDevice.Viewport.Bounds.Width - PaddleTop.Size.Width) / 2, 0);
 
             // Load ball texture 
             Texture2D ballTexture = Content.Load<Texture2D>("ball");
@@ -109,10 +110,10 @@ namespace PongGame
             // Load sounds 
             HitSound = Content.Load<SoundEffect>("hit");
 
-            Music = Content.Load<Song>("music");
-            MediaPlayer.IsRepeating = true;
+            // NE RADI // Music = Content.Load<Song>("music");
+            //         // MediaPlayer.IsRepeating = true;
             // Start playing background music 
-            MediaPlayer.Play(Music);
+            //         //MediaPlayer.Play(Music);
 
             SpritesForDrawList.Add(Background);
             SpritesForDrawList.Add(PaddleBottom);
@@ -138,27 +139,27 @@ namespace PongGame
         {
             base.Update(gameTime);
 
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back 
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back
                 == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
             var touchState = Keyboard.GetState();
+            if (touchState.IsKeyDown(Keys.A))
+            {
+                PaddleTop.Position.X
+                    -= (float)(PaddleTop.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
+            }
+            if (touchState.IsKeyDown(Keys.D))
+            {
+                PaddleTop.Position.X
+                    += (float)(PaddleTop.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
+            }
             if (touchState.IsKeyDown(Keys.Left))
             {
                 PaddleBottom.Position.X
                     -= (float)(PaddleBottom.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
             }
             if (touchState.IsKeyDown(Keys.Right))
-            {
-                PaddleBottom.Position.X
-                    += (float)(PaddleBottom.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
-            }
-            if (touchState.IsKeyDown(Keys.A))
-            {
-                PaddleBottom.Position.X
-                    -= (float)(PaddleBottom.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
-            }
-            if (touchState.IsKeyDown(Keys.D))
             {
                 PaddleBottom.Position.X
                     += (float)(PaddleBottom.Speed * gameTime.ElapsedGameTime.TotalMilliseconds);
@@ -184,19 +185,22 @@ namespace PongGame
                 HitSound.Play();
             }
 
-            // Reset ball
-            if (Ball.Position.Y > bounds.Bottom || Ball.Position.Y < bounds.Top)
-            {
-                Ball.Position = bounds.Center.ToVector2();
-                Ball.Speed = Ball.InitialSpeed;
-            }
-
-            if (CollisionDetector.Overlaps(Ball, PaddleTop) && (Ball.Direction.Y) < 0 
+            // Paddle - ball collision 
+            if (CollisionDetector.Overlaps(Ball, PaddleTop) && Ball.Direction.Y < 0
                 || CollisionDetector.Overlaps(Ball, PaddleBottom) && Ball.Direction.Y > 0)
             {
                 Ball.Direction.Y = -Ball.Direction.Y;
                 Ball.Speed *= Ball.BumpSpeedIncreaseFactor;
             }
+
+            // Reset ball
+            if (Ball.Position.Y > bounds.Bottom || Ball.Position.Y < bounds.Top)
+            {
+                Thread.Sleep(700);
+                Ball.Position = bounds.Center.ToVector2();
+                Ball.Speed = Ball.InitialSpeed;
+            }
+
         }
 
         /// <summary>
@@ -205,7 +209,8 @@ namespace PongGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            // Start drawing. 
+            spriteBatch.Begin();
 
             for (int i = 0; i < SpritesForDrawList.Count; i++)
             {

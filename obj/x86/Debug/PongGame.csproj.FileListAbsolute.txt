@@ -26,3 +26,37 @@ V:\Project Files\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Sha
 V:\Project Files\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct3D9.xml
 V:\Project Files\Visual Studio 2015\Projects\C#vj\PongGame\obj\x86\Debug\PongGame.exe
 V:\Project Files\Visual Studio 2015\Projects\C#vj\PongGame\obj\x86\Debug\PongGame.pdb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\PongGame.exe.config
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\obj\x86\Debug\PongGame.csprojResolveAssemblyReference.cache
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\background.xnb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\ball.xnb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\hit.xnb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\music.wma
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\music.xnb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\Content\paddle.xnb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\PongGame.exe
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\PongGame.pdb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\GenericListLibrary.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\MonoGame.Framework.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.XAudio2.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct3D11.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.DXGI.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct2D1.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.XInput.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.RawInput.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct3D9.dll
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\GenericListLibrary.pdb
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\MonoGame.Framework.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.XAudio2.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct3D11.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.DXGI.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct2D1.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.XInput.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.RawInput.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\bin\Windows\Debug\SharpDX.Direct3D9.xml
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\obj\x86\Debug\PongGame.exe
+V:\Vedran\Documents\Visual Studio 2015\Projects\C#vj\PongGame\obj\x86\Debug\PongGame.pdb
